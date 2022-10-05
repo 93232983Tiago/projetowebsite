@@ -31,7 +31,7 @@
                 <div class="img-wrapper">
                     <img src="/img/background3.jpg">
                 </div>
-                <div class="banner">
+                <div class="banner" id="home">
                     <h1>Developer Full Stack</h1>
                     <p>Tiago Freitas</p>
                     <button>Clique aqui para saber mais</button>
@@ -41,10 +41,10 @@
             <aside class="sidebar">
                 <nav>
                     <ul class="menu">
-                        <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="" class="menu-link">Conhecimentos</a></li>
-                        <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
-                        <li class="menu-item"><a href="" class="menu-link">Contato</a></li>
+                        <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+                        <li class="menu-item"><a href="#sessaoprojetos" class="menu-link">Projetos</a></li>
+                        <li class="menu-item"><a href="#contact" class="menu-link">Contato</a></li>
                     </ul>
                 </nav>
                 <div class="social-midia">
@@ -54,7 +54,7 @@
                 </div>
             </aside>
 
-            <section class="sessao-conhecimentos">
+            <section class="sessao-conhecimentos" id="conhecimentos">
                 <div class="sessao-header">
                     <h1>Conhecimentos</h1>
                 </div>
@@ -119,7 +119,7 @@
                 </div>
             </section>
 
-            <section class="sessao-projeto">
+            <section class="sessao-projeto" id="sessaoprojetos">
                 <div class="sessao-header">
                     <h1>Projetos</h1>
                 </div>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="card">
                         <div class="card-img">
-                            <img src="/img/calculadorapy.jpg" alt="">
+                            <img src="/img/calculadorapython.jpg" alt="">
                         </div>
                         <div class="info-card">
                             <h2>Calculadora em python</h2>
@@ -159,7 +159,43 @@
                     </div>
                 </div>
             </section>
-
+            <section class="sessao-contact" id="contact">
+                <div class="contato-wrapper">
+                    <div class="contato-left"></div>
+                    <div class="contato-right">
+                        <h1>Contato</h1>
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="field" id="nome">
+                                <label for="nome" class="field-label">Nome</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="field" id="email">
+                                <label for="email" class="field-label">E-mail</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea class="field" id="mensagem"></textarea>
+                                <label for="mensagem" class="field-label">Mensagem</label>
+                            </div>
+                            <button type="button" class="btn btn-dark">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-content">
+                    <p>
+                        Copyright &copy; 2022, TIAGOFREITAS - Todos os direitos reservados
+                    </p>
+                    <div class="social-list">
+                        <ul>
+                            <li><a href="https://github.com/93232983Tiago"><i class="fa-brands fa-github-alt"></i></a></li>
+                            <li><a href="https://www.instagram.com/tiago_skrtt/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/tiago-freitas-77044922a/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
     <script src="script.js"></script>
